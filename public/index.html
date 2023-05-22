@@ -8,8 +8,11 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+
+        <!---------------------------- header & main Image -------------------------->
+
         <div class="header">
-            <span style="color: rgb(4, 153, 253) ;">J.Z </span><span> MOBILE</span>
+            <span style="color: rgb(4, 153, 253) ;"><i class="fa-solid fa-mobile-screen-button" style="color: white;padding-right:10px;"></i> J.Z </span><span> MOBILE</span>
             <ul class="nav">
                 <li class="home"><a href="">Home</a> </li>
                 <li class="about"><a href="">About</a> </li>
@@ -18,7 +21,9 @@
             </ul>
         </div>
 
-        <img src="./images/vivo.jpg" alt="">
+         <!-- image & welcom note -->
+
+        <img class="mainImg"src="./images/vivo.jpg" alt="">
 
         <div class="note"> <h1> Welcome to <i class="fa-solid fa-hand fa-shake"></i></h1>
             <h2><q>J.Z Mobile & Computer Solution</q></h2>
@@ -29,7 +34,8 @@
             <a href="#scroll"><i class="fa-solid fa-arrow-down fa-beat"></i></a>
         </div>
 
-        <!-- Services -->
+        <!---------------------------------- Services ----------------------------------------->
+
         <h1 class="sheading" id="scroll"><i class="fa-solid
                 fa-hand-holding-heart"></i><br> OUR <span>SERVICES</span> </h1>
         <div class="services">
@@ -71,9 +77,9 @@
 
             </div>
         </div>
-
+        <!----------------------------  Contact -------------------------->
+             
         <div class="paralex"><h1 class="fa-beat-fade">Contact Us</h1></div>
-        <div class="contMain">
             <div class="social">
 
                 <h1><i class="fa-regular fa-handshake"></i> <br> Social <span
@@ -82,38 +88,48 @@
                     <div class="socialCards fa-face"> <a
                             href="https://www.facebook.com/zainraza1926"
                             target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+                    <div class="socialCards whats"> <a
+                            href="https://wa.me/+923057481756" target="_blank"><i
+                                class="fa-brands fa-whatsapp"></i></a></div>
+                    <div class="socialCards twitter"> <a
+                            href="https://twitter.com/zainraza1926"target="_blank"> <i
+                                class="fa-brands fa-twitter"></i></a></div>    
                     <div class="socialCards inst"> <a
                             href="https://www.instagram.com/zainraza1926/"
                             target="_blank"> <i
                                 class="fa-brands fa-instagram"></i></a></div>
-                    <div class="socialCards whats"> <a
-                            href="https://wa.me/+923057481756" target="_blank"><i
-                                class="fa-brands fa-whatsapp"></i></a></div>
                 </div>
             </div>
-            <div class="siteContact">
-                <i class="fa-regular fa-message"></i>
-                <form action="#" method="get" class="contact">
-                    <label for="Username" style="margin-top: 10px; display:
-                        block;">NAME</label>
-                    <input type="text" name="Username" placeholder="John">
-                    <label for="email" style="margin-top: 30px; display:
-                        block;">EMAIL</label>
-                    <input type="Email" name="email"
-                        placeholder="abcd@mail.com">
-                    <textarea name="message" id="msg" cols="30" rows="6"
-                        placeholder="Message"></textarea><br>
-                    <button>Send</button>
-                </form>
-                <img src="./images/girl.png" alt="">
-            </div>
+           
         </div>
+
+        <div class="siteContact">
+            <i class="fa-regular fa-message"></i>
+            <img src="./images/contact.png" alt=""> 
+            <form action="#" method="get" class="contact">
+                <label for="Username" style="margin-top: 10px; display:
+                    block;">NAME</label>
+                <input type="text" name="Username" placeholder="John">
+                <label for="email" style="margin-top: 30px; display:
+                    block;">EMAIL</label>
+                <input type="Email" name="email"
+                    placeholder="abcd@mail.com">
+                <textarea name="message" id="msg" cols="25" rows="6"
+                    placeholder="Message"></textarea><br>
+                <button>Send</button>
+            </form>
+        </div>
+
+        <!---------------------------- owner -------------------------->
+
 
         <div class="paralex paralex2">
 
             <img src="./images/owner.jpg" alt="" width="100px">
             <h2 class="fa-beat-fade">OWNER: <br> <q>ZAIN RAZA</q></h2>
         </div>
+
+        <!---------------------------- Location -------------------------->
 
         <h1 class="sheading"><i class="fa-solid fa-location-dot"></i><br> SHOP
             <span>LOCATION</span> </h1>
@@ -122,25 +138,29 @@
             height="500" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+        <!---------------------------- Footer -------------------------->
+
         <div class="footer">
             <ul class="footUl">
+                <i class="fa-solid fa-thumbs-up"></i>
                 <li><b>Recommended</b></li>
                 <li><a href="#">realme 9 Pro+</a></li>
                 <li><a href="#">realme 9i</a></li>
-                <li><a href="#">Samsung S20 Ultra</a></li>
-                <li><a href="#">Apple Airbirds</a></li>
             </ul>
             <ul class="footUl">
+                <i style="text-align: left; padding-left:20px" class="fa-solid fa-hand-holding-droplet"></i>
                 <li><b>Support</b></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Troubleshooting</a></li>
             </ul>
             <ul class="footUl">
+                <i class="fa-solid fa-circle-info"></i>
                 <li><b>About</b></li>
                 <li><a href="#">Location</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
             <ul class="footUl">
+                <i style="text-align: left; padding-left:20px" class="fa-regular fa-calendar-days"></i>
                 <li><b>Shedule</b></li>
                 <li><a href="#">7 Days Open (9am to 9pm)</a></li>
                 <li><a href="#">Friday ( 12pm to 3pm Off )</a></li>

@@ -30,7 +30,7 @@ body {
 }
 
 .nav {
-	margin-left: 40%;
+	margin-left: 35%;
 	font-size: 22px;
 	text-align: right;
 	font-family: serif;
@@ -69,7 +69,7 @@ body {
 	color: rgb(4, 153, 253) !important;
 }
 
-img {
+.mainImg {
 	width: 100vw;
 	height: 100vh;
 }
@@ -261,18 +261,11 @@ img {
 	color: rgb(4, 153, 253);
 }
 
-.contMain {
-	padding: 10px;     
-	margin-top: 80px;
-	position: relative;
-}
 
 .social {
-	width: 49%;
-	float: left;
-	height: 400px;
-	position: relative;
+	width: 100%;
 	display: inline-block;
+	
 }
 
 .social > h1 {
@@ -290,10 +283,11 @@ img {
 .plateform {
 	display: flex;
 	flex-flow: row;
+	flex-wrap: wrap;
 	margin-top: 100px;
-	padding-left: 50px;
 	align-items: center;
 	justify-content: space-around;
+	
 }
 
 .socialCards {
@@ -301,6 +295,8 @@ img {
 	height: 200px;
 	padding: 10px;
 	font-size: 65px;
+	margin-top: 30px;
+	margin-left: 20px;
 	text-align: center;
 	position: relative;
 	border-radius: 10px;
@@ -329,6 +325,12 @@ img {
 .fa-instagram {
 	color: white;
 }
+.fa-twitter{
+	color: white;
+}
+.twitter{
+	background-color: #1DA1F2;
+}
 
 .whats {
 	background-color: #19b105;
@@ -339,31 +341,35 @@ img {
 }
 
 .siteContact {
-	width: 47%;
+	width: 100%;
+	height: 680px;
+	margin-top: 100px;
+	position: relative;
 	display: inline-block;
+}
+
+.siteContact img{
+	top: 2%;
+	left: 15%;
+	height: auto;
+	width: 300px;
+	position: absolute;
+	transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
 }
 
 .siteContact > i {
 	top: 0;
-	left: 70%;
+	left: 47%;
 	padding: 30px;
 	font-size: 35px;
-	position: absolute;
+    position: absolute;
 	border-radius: 50px;
 	color: rgb(4, 187, 253);
 	background-color: #252a33;
 }
-
-.siteContact > img {
-	top: 6%;
-	left: 78%;
-	width: 320px;
-	height: 525px;
-	position: absolute;
-}
-
 .contact {
-	width: 60%;
+	width: 350px;
 	height: 450px;
 	margin-top: 50px;
 	padding-top: 50px;
@@ -395,7 +401,7 @@ img {
 	color: white;
 	font-size: 16px;
 	margin-top: 30px;
-	margin-left: 200px;
+	margin-left: 180px;
 	border-radius: 20px;
 	color: rgb(4, 187, 253);
 	background-color: #252a33;
@@ -411,21 +417,21 @@ iframe {
 	width: 90%;
 	margin-left: 5%;
 	margin-top: 50px;
+	margin-bottom: 250px;
 	box-shadow: 0px 0px 10px 5px rgb(221, 216, 216);
 }
 
 .footer {
 	width: 100%;
-	height: 250px;
+	height: 200px;
 	display: flex;
 	flex-flow: row;
-	margin-top: 200px;
-	justify-content: space-around;
 	background-color: #252a33;
+	justify-content: space-around;
 }
 
 .footUl {
-	margin-top: 50px;
+	margin-top: 30px;
 	list-style: none;
 	display: inline-block;
 }
@@ -453,13 +459,53 @@ iframe {
 }
 
 .footer2 {
-	height: 80px;
+	height: 60px;
 	margin-top: 0;
 	color: white;
 	display: inline-block;
 }
-
+.footer  i{
+	width: 100%;
+	color: white;
+	font-size: 32px;
+	text-align: center;
+	display: inline-block;
+	padding-bottom: 10px;
+}
 .footer2 > p {
 	margin-top: 20px;
 	margin-left: 100px;
+}
+
+
+@media only screen and (max-width: 1440px) {
+	
+	.siteContact img{
+		left: 3% !important;
+	}
+	
+}
+@media only screen and (max-width: 1000px) {
+	
+	.mainImg {
+		width: 100vw;
+		height: 80vh
+	}
+	.arrow > a {
+		height: 40px;
+		left: 50%;
+		top : 70% !important;
+	
+	}
+}	
+
+@media only screen and (max-width: 960px) {
+	
+	.siteContact img{
+		display: none;
+	}
+	
+	.nav{
+	margin-left: 20%;
+	}
 }
